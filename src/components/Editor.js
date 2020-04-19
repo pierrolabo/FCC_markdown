@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { updateText } from "../actions/updateTextAction";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { updateText } from '../actions/updateTextAction';
 
 class Editor extends Component {
   handleChange = (e) => {
@@ -9,13 +9,13 @@ class Editor extends Component {
   prop;
   render() {
     return (
-      <div className="editor-container">
-        <h2>Editor</h2>
+      <div className='editor-container'>
+        <h2 className='container-title'>Editor</h2>
         <textarea
-          name=""
-          id="editor"
-          cols="30"
-          rows="10"
+          name=''
+          id='editor'
+          cols='30'
+          rows='10'
           onChange={this.handleChange}
           value={this.props.text}
         ></textarea>

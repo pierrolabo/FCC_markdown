@@ -14,7 +14,7 @@ class Previewer extends Component {
   render() {
     return (
       <div className='previewer-container'>
-        <h2>Previewer</h2>
+        <h2 className='container-title'>Previewer</h2>
         <div
           className='previewer-display'
           id='preview'
